@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-04T23:09:26.342661" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="C:\QAx\projects\walkdog-robot\signup.robot">
+<test id="s1-t1" name="Deve poder cadastrar um novo dog walker" line="8">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.838964" level="INFO">${name} = Raquel Mendes</msg>
+<var>${name}</var>
+<arg>Raquel Mendes</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.838964" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.839939" level="INFO">${email} = raquelmg88@gmail.com</msg>
+<var>${email}</var>
+<arg>raquelmg88@gmail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.839939" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.840914" level="INFO">${cpf} = 45565981093</msg>
+<var>${cpf}</var>
+<arg>45565981093</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.840914" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.840914" level="INFO">${cep} = 08020010</msg>
+<var>${cep}</var>
+<arg>08020010</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.840914" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.841890" level="INFO">${addressStreet} = Rua Torixoréu</msg>
+<var>${addressStreet}</var>
+<arg>Rua Torixoréu</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.841890" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.842865" level="INFO">${addressDistrict} = Parque Sonia</msg>
+<var>${addressDistrict}</var>
+<arg>Parque Sonia</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.842865" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.843841" level="INFO">${addressCityUf} = São Paulo/SP</msg>
+<var>${addressCityUf}</var>
+<arg>São Paulo/SP</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.842865" elapsed="0.000976"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.843841" level="INFO">${addressNumber} = 1000</msg>
+<var>${addressNumber}</var>
+<arg>1000</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.843841" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.844817" level="INFO">${addressDetails} = ['Apto', '108']</msg>
+<var>${addressDetails}</var>
+<arg>Apto</arg>
+<arg>108</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.844817" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-04T23:09:27.844817" level="INFO">${cnh} = CNH.jpg</msg>
+<var>${cnh}</var>
+<arg>CNH.jpg</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.844817" elapsed="0.000000"/>
+</kw>
+<kw name="Go to signup page">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-07-04T23:09:27.846769" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAx\\projects\\walkdog-robot\\logs\\browser\\traces\\95fd37e6-bea6-4d7f-9d9d-6a874bda9e0c"}</msg>
+<msg time="2024-07-04T23:09:29.336803" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAx\\projects\\walkdog-robot\\logs\\browser\\traces\\95fd37e6-bea6-4d7f-9d9d-6a874bda9e0c"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-07-04T23:09:27.845794" elapsed="1.491009"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-07-04T23:09:30.460325" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app/signup</msg>
+<msg time="2024-07-04T23:09:30.460325" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://walkdog.vercel.app/signup</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-07-04T23:09:29.336803" elapsed="1.124499"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-07-04T23:09:30.522357" level="INFO">Waited for Element with selector form h1 at state visible</msg>
+<arg>form h1</arg>
+<arg>visible</arg>
+<arg>5000</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-07-04T23:09:30.461302" elapsed="0.061055"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-07-04T23:09:30.558470" level="INFO">Text: 'Faça seu cadastro'</msg>
+<arg>form h1</arg>
+<arg>equal</arg>
+<arg>Faça seu cadastro</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:30.522357" elapsed="0.036113"/>
+</kw>
+<status status="PASS" start="2024-07-04T23:09:27.845794" elapsed="2.712676"/>
+</kw>
+<kw name="Fill signup form">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-04T23:09:30.560421" level="INFO">Fills the text 'Raquel Mendes' in the given field.</msg>
+<arg>css=input[name=name]</arg>
+<arg>${name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:30.560421" elapsed="0.079610"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-04T23:09:30.640031" level="INFO">Fills the text 'raquelmg88@gmail.com' in the given field.</msg>
+<arg>css=input[name=email]</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:30.640031" elapsed="0.023423"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-04T23:09:30.663454" level="INFO">Fills the text '45565981093' in the given field.</msg>
+<arg>css=input[name=cpf]</arg>
+<arg>${cpf}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:30.663454" elapsed="0.023973"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-04T23:09:30.688403" level="INFO">Fills the text '08020010' in the given field.</msg>
+<arg>css=input[name=cep]</arg>
+<arg>${cep}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:30.688403" elapsed="0.021471"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-07-04T23:09:30.710850" level="INFO">Clicks the element 'css=input[type=button][value$=CEP]'.</msg>
+<arg>css=input[type=button][value$=CEP]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:30.709874" elapsed="0.069311"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2024-07-04T23:09:31.176721" level="INFO">Property: 'Rua Torixoréu'</msg>
+<arg>css=input[name=addressStreet]</arg>
+<arg>value</arg>
+<arg>equal</arg>
+<arg>${addressStreet}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:30.779185" elapsed="0.397536"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2024-07-04T23:09:31.191398" level="INFO">Property: 'Parque Sonia'</msg>
+<arg>css=input[name=addressDistrict]</arg>
+<arg>value</arg>
+<arg>equal</arg>
+<arg>${addressDistrict}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:31.177705" elapsed="0.013693"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2024-07-04T23:09:31.206037" level="INFO">Property: 'São Paulo/SP'</msg>
+<arg>css=input[name=addressCityUf]</arg>
+<arg>value</arg>
+<arg>equal</arg>
+<arg>${addressCityUf}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:31.192381" elapsed="0.014633"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-04T23:09:31.207014" level="INFO">Fills the text '1000' in the given field.</msg>
+<arg>css=input[name=addressNumber]</arg>
+<arg>${addressNumber}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:31.207014" elapsed="0.019519"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-07-04T23:09:31.226533" level="INFO">Fills the text '['Apto', '108']' in the given field.</msg>
+<arg>css=input[name=addressDetails]</arg>
+<arg>${addressDetails}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:31.226533" elapsed="0.024401"/>
+</kw>
+<kw name="Upload File By Selector" owner="Browser">
+<arg>css=input[type=file]</arg>
+<arg>${EXECDIR}/${cnh}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Uploads file from `path` to file input element matched by selector.</doc>
+<status status="PASS" start="2024-07-04T23:09:31.250934" elapsed="0.050313"/>
+</kw>
+<arg>${name}</arg>
+<arg>${email}</arg>
+<arg>${cpf}</arg>
+<arg>${cep}</arg>
+<arg>${addressStreet}</arg>
+<arg>${addressDistrict}</arg>
+<arg>${addressCityUf}</arg>
+<arg>${addressNumber}</arg>
+<arg>${addressDetails}</arg>
+<arg>${cnh}</arg>
+<status status="PASS" start="2024-07-04T23:09:30.559445" elapsed="0.741802"/>
+</kw>
+<kw name="Submit signup form">
+<kw name="Click" owner="Browser">
+<msg time="2024-07-04T23:09:31.303199" level="INFO">Clicks the element 'css=.button-register'.</msg>
+<arg>css=.button-register</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:31.302223" elapsed="0.066369"/>
+</kw>
+<status status="PASS" start="2024-07-04T23:09:31.302223" elapsed="0.067345"/>
+</kw>
+<kw name="Popup should be">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-07-04T23:09:32.180072" level="INFO">Waited for Element with selector css=.swal2-html-container at state visible</msg>
+<arg>css=.swal2-html-container</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-07-04T23:09:31.370545" elapsed="0.809527"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-07-04T23:09:32.201105" level="INFO">Text: 'Recebemos o seu cadastro e em breve retornaremos o contato.'</msg>
+<arg>css=.swal2-html-container</arg>
+<arg>equal</arg>
+<arg>${expected_text}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-07-04T23:09:32.181049" elapsed="0.020056"/>
+</kw>
+<arg>Recebemos o seu cadastro e em breve retornaremos o contato.</arg>
+<status status="PASS" start="2024-07-04T23:09:31.369568" elapsed="0.831537"/>
+</kw>
+<status status="PASS" start="2024-07-04T23:09:27.836035" elapsed="4.365070"/>
+</test>
+<doc>Suite de testes de cadastro de dog walker</doc>
+<status status="PASS" start="2024-07-04T23:09:26.344613" elapsed="5.963418"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Signup">Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
